@@ -1,0 +1,211 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.directory-section {
+    background-color: rgba(24, 23, 23, 0.896);
+    padding:15px 15px 15px 0px;
+    text-align: right;
+}
+.directory li {
+    list-style: none;
+    display: inline;
+    padding: 10px;
+}
+.directory a {
+    text-decoration: none;
+    display: inline;
+    color: white;
+    font-family: calibri;
+}
+.fa-sharp {
+    color: white;
+}
+.logo-section {
+    margin-top: 30px;
+}
+.logo li {
+    list-style: none;
+    display: inline;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+}
+.log {
+    size: 10px;
+}
+.name {
+    display: flex;
+    align-self: center;
+    padding: 10px;
+    font-family:franklin gothic medium;
+    font-size: 12px;
+    text-align: center;
+}
+.break {
+    font-size: 18px;
+    font-family: arial narrow;
+    font-weight: bold;
+}
+.menu-section {
+    text-align: center;
+    padding: 20px;
+}
+.menu-section li {
+    list-style: none;
+    display: inline;
+    padding: 20px;
+}
+.menu-section a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+.wrapper {
+    width: 100%;
+    height: 10px;
+    -webkit-animation-name: slide_animation ;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+}
+.box {
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    float: left;
+    position: relative;
+    margin: 0 4px;
+    -webkit-animation-name: slide_animation ;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction:reverse;
+    -webkit-animation-play-state: running;
+}
+.box2 {
+    margin-top: -399px;
+    float: left;
+}
+@-webkit-keyframes slide_animation{
+    0% {top:0px;}
+    10% {top:0px;}
+    20% {top:2400px;}
+    30% {top:2400px;}
+    40% {top:2400px;}
+    50% {top:0px;}
+    60% {top:0px;}
+    70% {top:0px;}
+    80% {top:0px;}
+    90% {top:2400px;}
+    100% {top:2400px;}
+
+}
+.img1 {
+    position: absolute;
+    z-index: 2;
+    transition: .5s ease-in-out;
+    transform-origin: 50%, 50%;
+    width: 100%;
+    height: 400px;
+    margin-top: 0px;
+    background-image: linear-gradient(green);
+    background-size: cover;
+    color: green;
+}
+.img2 {
+    filter:blur(0px);
+    transform: scale(1);
+    opacity: 1;
+    transition: .5s ease-in;
+    width: 225%;
+    height: 360px;
+}
+.active:hover {
+    color: white;
+}
+.menu-section .active {
+    text-decoration: underline 1px rgb(59, 183, 59);
+    text-decoration-thickness: 5px;
+    text-underline-offset: 20px;
+}
+.box:hover .img1 {
+    filter: blur(20px);
+    transform: scale(1);
+    opacity: 0;
+}
+.box:hover .img2 {
+    filter: blur(0px);
+    transform: scale(1);
+    opacity: 1;
+}
+.clickable {
+    padding: 15px;
+    color: purple;
+    border: solid 2px purple;
+    background-color: transparent;
+}
+.display-text {
+    margin-top: -100px;
+    float: left;
+}
+.display-text:hover .img1, .img {
+    filter: blur(0px);
+    transform: scale(1);
+    opacity: 0;
+}
+.display-text {
+    position: absolute;
+    z-index: 2;
+    transition: .5s ease-in-out;
+    transform-origin: 50%, 50%;
+    width: 100%;
+    height: 400px;
+    margin-top: 50px;
+    color: purple;
+    font-family: franklin gothic medium;
+    padding-left: 70px;
+    font-weight: bolder;
+}
+.text2 {
+    font-size: 4vw;
+    width: 50%;
+    padding-bottom: 30px;
+}
+.text1 {
+    padding-bottom: 20px;
+    font-size: 1.2vw;
+    
+}
+.box:hover .display-text {
+    filter: blur(20px);
+    transform: scale(1);
+    opacity: 0;
+}
+.hero-section {
+    display: flex;
+    width: 110%;
+    padding-top: 60px;
+    font-family: calibri;
+}
+.hero-section .hero-text {
+    width: 50%;
+}
+.hero-section .vc-image {
+    padding: 0px 50px 50px 150px;
+}
+.prof {
+    display: flex;
+    justify-content: center;
+    color: rgba(7, 168, 7, 0.816);
+    font-weight: bolder;
+}
+.hero1 {
+    font-size: 2vw;
+    color: rgba(8, 179, 8, 0.843);
+}
+.herop {
+    text-align: justify;
+    font-size: 1vw;
+}
