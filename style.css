@@ -74,33 +74,33 @@
 .box {
     height: 400px;
     width: 100%;
-    overflow: hidden;
+    overflow: auto;
     float: left;
     position: relative;
     margin: 0 4px;
     overflow-y: hidden;
     -webkit-animation-name: slide_animation ;
-    -webkit-animation-duration: 20s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction:reverse;
-    -webkit-animation-play-state: running;
+    -webkit-animation-duration: 6s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-direction:alternate-reverse;
+    -webkit-animation-play-state:running;
 }
 .box2 {
     margin-top: -399px;
     float: left;
 }
 @-webkit-keyframes slide_animation{
-    0% {top:0px;}
-    10% {top:0px;}
-    20% {top:2400px;}
-    30% {top:2400px;}
-    40% {top:2400px;}
-    50% {top:0px;}
+    0% {bottom:1200px;}
+    10% {bottom:1200px;}
+    20% {top:400px;}
+    30% {bottom:0px;}
+    40% {bottom:0px;}
+    50% {bottom:0px;}
     60% {top:0px;}
     70% {top:0px;}
     80% {top:0px;}
-    90% {top:2400px;}
-    100% {top:2400px;}
+    90% {bottom:0px;}
+    100% {bottom:0px;}
 
 }
 .img1 {
@@ -114,16 +114,16 @@
     background-image: linear-gradient(green);
     background-size: cover;
     color: green;
-    overflow-y: hidden;
+    overflow: auto;
 }
 .img2 {
     filter:blur(0px);
     transform: scale(1);
     opacity: 1;
     transition: .5s ease-in;
-    width: 247%;
+    width: 224%;
     height: 399px;
-    overflow-y: hidden;
+    overflow-y: auto;
 }
 .active:hover {
     color: white;
@@ -139,11 +139,13 @@
     opacity: 0;
     overflow-y: hidden;
 }
-.box:hover .img2 {
+
+body:hover .img1 {
     filter: blur(0px);
     transform: scale(1);
     opacity: 1;
     overflow-y: hidden;
+    overflow: hidden;
 }
 .clickable {
     padding: 15px;
@@ -297,7 +299,7 @@
     font-size: 1vw;
 }
 .dot1 {
-    padding: 20px;
+    padding: 20px 20px 20px 50px;
     border-radius: 10px;
     border: solid 3px rgba(8, 198, 8, 0.948);
     color: rgba(6, 199, 6, 0.924);
@@ -307,5 +309,119 @@
 .bott2 {
     display: flex;
     justify-content: right;
-    padding-right: 60px;
+    padding-right: 150px;
+}
+.hh11 {
+    font-family: calibri;
+    padding-left: 40px;
+    text-align: center;
+}
+.special-class {
+    display: flex;
+    padding-left: 150px;
+    font-family: calibri;
+}
+.josh {
+    display: ;
+    text-align: right;
+    padding-right: 30px;
+
+}
+.special2 {
+    padding-right: 30px;
+}
+.special3 {
+    padding-top: 30px;
+    font-size: 0.90vw;
+
+}
+.hh1 {
+    padding-bottom: 80px;
+    color: rgba(9, 181, 9, 0.935);
+    font-weight: bolder;
+    font-size: 2vw;
+}
+.span2 {
+    font-size: 1vw;
+    font-weight: lighter;
+}
+.hero-section3 {
+    background-color: rgba(127, 255, 212, 0.275);
+    padding: 80px 80px 0px 80px;
+    margin-top: 90px;
+}
+.line {
+    padding-left: 30px;
+    margin-top: 100px;
+}
+.hero-section4 {
+    background-image:url(images/WWW.png);
+    background-repeat: no-repeat;
+    font-family: calibri;
+    background-size: 800px;
+    background-position: center;
+    margin-top: 100px;
+}
+.newest {
+    text-align: center;
+    padding: 20px;
+    color: rgba(6, 179, 6, 0.966);
+    background-color: transparent;
+}
+.hero-section5 {
+    display: flex;
+    background-color: rgba(6, 164, 6, 0.692);
+    color: white;
+    font-family: calibri;
+    justify-content: space-around;
+    padding: 150px;
+}
+.column1 {
+    font-size: 1vw;
+    display: flex;
+    padding-top: 12px;
+}
+.hhhh1 {
+    font-size: 1vw;
+    text-align: center;
+    padding-left: 10px;
+}
+.unity {
+    font-weight: lighter;
+    font-size: 0.77vw;
+}
+.second, .third, .fourth {
+    font-size: 1vw;
+}
+.hov {
+    padding: 15px 40px 15px 40px;
+    border-radius: 10px;
+    border: solid 1px green;
+    color: green;
+}
+.copyright {
+    font-size: 1.2vw;
+}
+.fa-regular {
+    font-weight: lighter;
+    font-size: 1vw;
+}
+.na {
+    align-self: left;
+    padding-right: 15px;
+    font-size: 25px;
+}
+.ma {
+    align-self: left;
+    padding-right: 12px;
+    font-size: 25px;
+}
+.ccc {
+    display: flex;
+}
+.cccc {
+    display: flex;
+}
+.dan {
+    padding-left: 34px;
 }
