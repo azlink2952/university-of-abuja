@@ -216,7 +216,8 @@ body:hover .img1 {
 }
 .herop {
     text-align: justify;
-    font-size: 1vw;
+    font-size: 1.2vw;
+    width: 80%;
 }
 .read {
     color: rgba(12, 185, 12, 0.814);
